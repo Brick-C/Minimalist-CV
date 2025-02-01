@@ -242,7 +242,7 @@
         .skill-tag {
           display: flex;
           flex-wrap: wrap;
-          gap: 6px;
+          gap: 7px;
 
           p {
             font-size: 1.15rem;
@@ -296,12 +296,15 @@
                 margin-top: 5%;
 
                 &:hover span {
-                  content: "";
                   display: inline-block;
-                  width: 6px;
-                  height: 6px;
-                  background-color: rgb(26, 210, 26);
-                  border-radius: 50%;
+
+                  text-decoration: underline;
+                  color: green;
+                  border: 1px solid green;
+                  border-radius: 5px;
+                  padding: 0 16px;
+                  margin-left: 4px;
+                  transition: all 0.3s ease-in-out;
                 }
               }
             }
