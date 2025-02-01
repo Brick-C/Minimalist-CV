@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tamjid Hossain - Resume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Zain"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Zain"
+    /></noscript>
+    <style>
+      body {
+        font-family: "New Amsterdam", "Zain";
+        margin: 4% 0;
+        padding: 0 24%;
+        text-align: center;
+      }
+
+      /* header styling */
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .header-text {
+          display: flex;
+          flex-direction: column;
+          text-align: left;
+          h2 {
+            margin: 0;
+            font-size: 2.1rem;
+            font-weight: 400;
+          }
+          p {
+            margin-bottom: 0px;
+            font-family: "Zain";
+            font-size: 1.15rem;
+          }
+
+          .location {
+            display: flex;
+            margin-top: 0;
+            p {
+              display: flex;
+              font-size: 1rem;
+              margin: 0;
+              img {
+                margin-top: 3px;
+                margin-right: 5px;
+              }
+            }
+          }
+
+          .socials {
+            display: flex;
+            gap: 10px;
+            margin-top: 2%;
+            a {
+              border: 1px solid #b9b9b9;
+              padding: 3px 6px;
+              border-radius: 7px;
+              margin-top: 8px;
+              text-decoration: none;
+              transition: all 0.3s ease-in-out;
+              &:hover {
+                background-color: #d9d9d9;
+              }
+
+              img {
+                display: block;
+              }
+            }
+          }
+        }
+      }
+
+      .photo {
+        img {
+          width: 144px;
+          height: 152px;
+          border-radius: 18%;
+          object-fit: cover;
+        }
+      }
+
+      /* About styling */
+      .about {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 3%;
+        .about-text {
+          text-align: left;
+          h3 {
+            font-size: 1.8rem;
+            font-weight: 400;
+            margin-bottom: 2px;
+          }
+          p {
+            font-size: 1.15rem;
+            font-family: "Zain";
+          }
+        }
+      }
+
+      /* Work styling */
+      .work {
+        display: flex;
+        flex-direction: column;
+
+        h3 {
+          font-size: 1.8rem;
+          font-weight: 400;
+          margin-bottom: 1%;
+          text-align: left;
+        }
+
+        .work-entry {
+          display: flex;
+          flex-direction: column;
+          border-bottom: 1px dotted #c3c1c1;
+
+          .work-head {
+            display: flex;
+            align-items: flex-start;
+            gap: 7px;
+            margin-top: 1.4%;
+            h3 {
+              font-size: 1.3rem;
+              font-family: "Zain";
+              font-weight: bold;
+              margin: 0;
+              text-align: left;
+            }
+
+            .tags {
+              display: flex;
+              gap: 5px;
+              margin-top: 0.9%;
+              p {
+                font-size: 1rem;
+                font-family: "Zain";
+                padding: 1px 8px;
+                background-color: rgb(239, 238, 238);
+                color: rgb(0, 0, 0);
+                border-radius: 5px;
+                margin-top: -2%;
+              }
+            }
+
+            .time {
+              display: flex;
+              justify-content: flex-end;
+              width: 100%;
+              margin-top: -2%;
+              font-family: "Zain";
+              font-weight: 600;
+              font-size: 1.16rem;
+              color: #767373;
+            }
+          }
+
+          .work-description {
+            text-align: left;
+            margin-top: -4%;
+            font-family: "Zain";
+
+            p {
+              font-size: 1.19rem;
+              font-weight: 600;
+            }
+            ul {
+              list-style-type: disc;
+              padding-left: 20px;
+              margin-top: -2%;
+              font-size: 1.05rem;
+            }
+          }
+        }
+        .work-entry:last-child {
+          border-bottom: none;
+        }
+      }
+
+      /* Education styling */
+      .education {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-self: center;
+        .edu-text {
+          text-align: left;
+
+          h3 {
+            font-size: 1.8rem;
+            font-weight: 400;
+            margin-bottom: -1%;
+          }
+          .name-time {
+            display: flex;
+            justify-content: space-between;
+            h4 {
+              font-family: "Zain";
+              font-size: 1.3rem;
+            }
+            p {
+              font-family: "Zain";
+              font-weight: 600;
+              font-size: 1.16rem;
+              margin-top: 4%;
+              color: #767373;
+            }
+          }
+
+          p {
+            font-size: 1.15rem;
+            font-family: "Zain";
+            margin-top: -3%;
+          }
+        }
+      }
+
+      /* Skill styling */
+      .skill {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+
+        h3 {
+          font-size: 1.8rem;
+          font-weight: 400;
+          margin-bottom: 1%;
+        }
+        .skill-tag {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 6px;
+
+          p {
+            font-size: 1.15rem;
+            font-family: "Zain";
+            padding: 1px 9px;
+            background-color: rgb(42, 42, 42);
+            color: white;
+            border-radius: 5px;
+            margin-top: 2%;
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+            &:hover {
+              background-color: #666666;
+            }
+          }
+        }
+      }
+
+      /* Project styling */
+      .projects {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        h3 {
+          font-size: 1.8rem;
+          font-weight: 400;
+          margin-bottom: 1%;
+        }
+
+        .box {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          gap: 2%;
+
+          .box-card {
+            flex: 1 0 calc(32% - 20px);
+            padding: 2px 14px;
+            border: 1px solid #e0dede;
+            border-radius: 5px;
+            margin-top: 2%;
+            box-sizing: border-box;
+
+            a {
+              text-decoration: none;
+              color: black;
+              h4 {
+                font-size: 1.3rem;
+                font-family: "Zain";
+                margin-bottom: 1%;
+                margin-top: 5%;
+
+                &:hover span {
+                  content: "";
+                  display: inline-block;
+                  width: 6px;
+                  height: 6px;
+                  background-color: rgb(26, 210, 26);
+                  border-radius: 50%;
+                }
+              }
+            }
+            p {
+              font-size: 1.08rem;
+              font-family: "Zain";
+              margin-top: 0;
+            }
+            .stack {
+              display: flex;
+              gap: 5px;
+              p {
+                font-size: 1rem;
+                font-family: "Zain";
+                padding: 1px 8px;
+                background-color: rgb(239, 238, 238);
+                color: rgb(0, 0, 0);
+                border-radius: 5px;
+                margin-top: 2%;
+              }
+            }
+          }
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="header-text">
+        <h2>John Wick</h2>
+        <p>Full Stack Web Developer and Future Designer.</p>
+        <div class="location">
+          <p>
+            <img
+              width="16"
+              height="16"
+              src="https://img.icons8.com/ios/50/globe--v1.png"
+              alt="globe--v1"
+            />
+            Dhaka, Bangladesh
+          </p>
+        </div>
+        <div class="socials">
+          <a href="#"
+            ><img
+              width="24"
+              height="24"
+              src="https://img.icons8.com/material-sharp/24/github.png"
+              alt="github"
+          /></a>
+          <a href="#"
+            ><img
+              width="23"
+              height="23"
+              src="https://img.icons8.com/ios-glyphs/30/twitterx--v2.png"
+              alt="twitterx--v2"
+          /></a>
+        </div>
+      </div>
+
+      <div class="photo">
+        <img src="./image.jpg" alt="John Wick" />
+      </div>
+    </div>
+
+    <div class="about">
+      <div class="about-text">
+        <h3>About</h3>
+        <p>
+          I am a Full Stack Web Developer and Future Designer. I have been
+          working in the web development field for the last 2 years. I have
+          experience in developing web applications using modern technologies
+          like React, Node, Express, and MongoDB. I am also interested in UI/UX
+          design and have experience in designing user interfaces for web
+          applications.
+        </p>
+      </div>
+    </div>
+
+    <div class="work">
+      <h3>Work Experience</h3>
+      <div class="work-entry">
+        <div class="work-head">
+          <h3>Film.io</h3>
+          <div class="tags">
+            <p>Remote</p>
+            <p>React</p>
+            <p>Next.js</p>
+          </div>
+          <div class="time">
+            <p>2020 - Present</p>
+          </div>
+        </div>
+
+        <div class="work-description">
+          <p>Software Architect</p>
+          <ul>
+            <li>
+              Leading technical architecture of a blockchain-based film funding
+              platform.
+            </li>
+            <li>
+              Architecting migration from CRA to Next.js for improved
+              performance, SEO, and DX.
+            </li>
+            <li>
+              Established release process enabling faster deployments and
+              reliable rollbacks.
+            </li>
+            <li>
+              Implementing system-wide monitoring and security improvements.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="work-entry">
+        <div class="work-head">
+          <h3>Film.io</h3>
+          <div class="tags">
+            <p>Remote</p>
+            <p>React</p>
+            <p>Next.js</p>
+          </div>
+          <div class="time">
+            <p>2020 - Present</p>
+          </div>
+        </div>
+
+        <div class="work-description">
+          <p>Software Architect</p>
+          <ul>
+            <li>
+              Leading technical architecture of a blockchain-based film funding
+              platform.
+            </li>
+            <li>
+              Architecting migration from CRA to Next.js for improved
+              performance, SEO, and DX.
+            </li>
+            <li>
+              Established release process enabling faster deployments and
+              reliable rollbacks.
+            </li>
+            <li>
+              Implementing system-wide monitoring and security improvements.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="education">
+      <div class="edu-text">
+        <h3>Education</h3>
+        <div class="name-time">
+          <h4>Some Kind University</h4>
+          <p>2020 - 2024</p>
+        </div>
+        <p>Bachelor of Science in Computer Science and Engineering</p>
+      </div>
+    </div>
+
+    <div class="skill">
+      <h3>Skills</h3>
+      <div class="skill-tag">
+        <p>React</p>
+        <p>Node.js</p>
+        <p>MongoDB</p>
+        <p>Next.js</p>
+        <p>UI/UX Design</p>
+        <p>Tailwind</p>
+      </div>
+    </div>
+
+    <div class="projects">
+      <h3 id="link">Projects</h3>
+      <div class="box">
+        <div class="box-card">
+          <a href="#"
+            ><h4>Project 1 <span></span></h4
+          ></a>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            voluptates, quod, quae, quos quia quibusdam quidem voluptatum
+          </p>
+          <div class="stack">
+            <p>React</p>
+            <p>Node.js</p>
+          </div>
+        </div>
+
+        <div class="box-card">
+          <a href="#"
+            ><h4>Project 2 <span></span></h4
+          ></a>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            voluptates, quod, quae, quos quia quibusdam quidem voluptatum
+          </p>
+          <div class="stack">
+            <p>React</p>
+            <p>Node.js</p>
+          </div>
+        </div>
+
+        <div class="box-card">
+          <a href="#"
+            ><h4>Project 3 <span></span></h4
+          ></a>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+            voluptates, quod, quae, quos quia quibusdam quidem voluptatum
+          </p>
+          <div class="stack">
+            <p>React</p>
+            <p>Node.js</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
