@@ -17,12 +17,14 @@
         rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Zain"
     /></noscript>
+
+    <!-- CSS styling -->
     <style>
       body {
         font-family: "New Amsterdam", "Zain";
-        margin: 4% 0;
-        padding: 0 24%;
-        text-align: center;
+        margin: 4% auto;
+        max-width: 1200px;
+        padding: 0 2em;
       }
 
       /* header styling */
@@ -85,8 +87,9 @@
 
       .photo {
         img {
-          width: 144px;
-          height: 152px;
+          width: 20%;
+          height: auto;
+          max-width: 144px;
           border-radius: 18%;
           object-fit: cover;
         }
@@ -95,7 +98,7 @@
       /* About styling */
       .about {
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
         margin-top: 3%;
         .about-text {
           text-align: left;
@@ -279,7 +282,8 @@
           gap: 2%;
 
           .box-card {
-            flex: 1 0 calc(32% - 20px);
+            flex: 1 1 calc(32% - 20px); /* Allows flex items to shrink/grow */
+            min-width: 200px; /* Prevents items from becoming too small */
             padding: 2px 14px;
             border: 1px solid #e0dede;
             border-radius: 5px;
