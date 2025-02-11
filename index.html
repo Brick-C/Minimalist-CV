@@ -25,6 +25,10 @@
         text-align: center;
       }
 
+      .container {
+        max-width: 700px;
+      }
+
       /* header styling */
       .header {
         display: flex;
@@ -44,6 +48,7 @@
             margin-bottom: 0px;
             font-family: "Zain";
             font-size: 1.15rem;
+            letter-spacing: 0.8px;
           }
 
           .location {
@@ -107,6 +112,7 @@
           p {
             font-size: 1.15rem;
             font-family: "Zain";
+            letter-spacing: 0.8px;
           }
         }
       }
@@ -176,12 +182,14 @@
             p {
               font-size: 1.19rem;
               font-weight: 600;
+              letter-spacing: 0.7px;
             }
             ul {
               list-style-type: disc;
               padding-left: 20px;
               margin-top: -2%;
               font-size: 1.08rem;
+              letter-spacing: 0.7px;
             }
           }
         }
@@ -224,6 +232,7 @@
             font-size: 1.15rem;
             font-family: "Zain";
             margin-top: -3%;
+            letter-spacing: 0.7px;
           }
         }
       }
@@ -475,196 +484,198 @@
   </head>
 
   <body>
-    <div class="header">
-      <div class="header-text">
-        <h2>A.Nomad</h2>
-        <p>Full Stack Web Developer and Future Designer.</p>
-        <div class="location">
+    <div class="container">
+      <div class="header">
+        <div class="header-text">
+          <h2>A.Nomad</h2>
+          <p>Full Stack Web Developer and Future Designer.</p>
+          <div class="location">
+            <p>
+              <img
+                width="16"
+                height="16"
+                src="https://img.icons8.com/ios/50/globe--v1.png"
+                alt="globe--v1"
+              />
+              Dhaka, Bangladesh
+            </p>
+          </div>
+          <div class="socials">
+            <a href="#"
+              ><img
+                width="24"
+                height="24"
+                src="https://img.icons8.com/material-sharp/24/github.png"
+                alt="github"
+            /></a>
+            <a href="#"
+              ><img
+                width="23"
+                height="23"
+                src="https://img.icons8.com/ios-glyphs/30/twitterx--v2.png"
+                alt="twitterx--v2"
+            /></a>
+          </div>
+        </div>
+
+        <div class="photo">
+          <img src="./image.jpg" alt="John Wick" loading="lazy" />
+        </div>
+      </div>
+
+      <div class="about">
+        <div class="about-text">
+          <h3>About</h3>
           <p>
-            <img
-              width="16"
-              height="16"
-              src="https://img.icons8.com/ios/50/globe--v1.png"
-              alt="globe--v1"
-            />
-            Dhaka, Bangladesh
+            I am a Full Stack Web Developer and Future Designer. I have been
+            working in the web development field for the last 2 years. I have
+            experience in developing web applications using modern technologies
+            like React, Node, Express, and MongoDB. I am also interested in
+            UI/UX design and have experience in designing user interfaces for
+            web applications.
           </p>
         </div>
-        <div class="socials">
-          <a href="#"
-            ><img
-              width="24"
-              height="24"
-              src="https://img.icons8.com/material-sharp/24/github.png"
-              alt="github"
-          /></a>
-          <a href="#"
-            ><img
-              width="23"
-              height="23"
-              src="https://img.icons8.com/ios-glyphs/30/twitterx--v2.png"
-              alt="twitterx--v2"
-          /></a>
-        </div>
       </div>
 
-      <div class="photo">
-        <img src="./image.jpg" alt="John Wick" />
-      </div>
-    </div>
-
-    <div class="about">
-      <div class="about-text">
-        <h3>About</h3>
-        <p>
-          I am a Full Stack Web Developer and Future Designer. I have been
-          working in the web development field for the last 2 years. I have
-          experience in developing web applications using modern technologies
-          like React, Node, Express, and MongoDB. I am also interested in UI/UX
-          design and have experience in designing user interfaces for web
-          applications.
-        </p>
-      </div>
-    </div>
-
-    <div class="work">
-      <h3>Work Experience</h3>
-      <div class="work-entry">
-        <div class="work-head">
-          <h3>Film.io</h3>
-          <div class="tags">
-            <p>Remote</p>
-            <p>React</p>
-            <p>Next.js</p>
+      <div class="work">
+        <h3>Work Experience</h3>
+        <div class="work-entry">
+          <div class="work-head">
+            <h3>Film.io</h3>
+            <div class="tags">
+              <p>Remote</p>
+              <p>React</p>
+              <p>Next.js</p>
+            </div>
+            <div class="time">
+              <p>2020 - Present</p>
+            </div>
           </div>
-          <div class="time">
-            <p>2020 - Present</p>
+
+          <div class="work-description">
+            <p>Software Architect</p>
+            <ul>
+              <li>
+                Leading technical architecture of a blockchain-based film
+                funding platform.
+              </li>
+              <li>
+                Architecting migration from CRA to Next.js for improved
+                performance, SEO, and DX.
+              </li>
+              <li>
+                Established release process enabling faster deployments and
+                reliable rollbacks.
+              </li>
+              <li>
+                Implementing system-wide monitoring and security improvements.
+              </li>
+            </ul>
           </div>
         </div>
 
-        <div class="work-description">
-          <p>Software Architect</p>
-          <ul>
-            <li>
-              Leading technical architecture of a blockchain-based film funding
-              platform.
-            </li>
-            <li>
-              Architecting migration from CRA to Next.js for improved
-              performance, SEO, and DX.
-            </li>
-            <li>
-              Established release process enabling faster deployments and
-              reliable rollbacks.
-            </li>
-            <li>
-              Implementing system-wide monitoring and security improvements.
-            </li>
-          </ul>
+        <div class="work-entry">
+          <div class="work-head">
+            <h3>Film.io</h3>
+            <div class="tags">
+              <p>Remote</p>
+              <p>React</p>
+              <p>Next.js</p>
+            </div>
+            <div class="time">
+              <p>2020 - Present</p>
+            </div>
+          </div>
+
+          <div class="work-description">
+            <p>Software Architect</p>
+            <ul>
+              <li>
+                Leading technical architecture of a blockchain-based film
+                funding platform.
+              </li>
+              <li>
+                Architecting migration from CRA to Next.js for improved
+                performance, SEO, and DX.
+              </li>
+              <li>
+                Established release process enabling faster deployments and
+                reliable rollbacks.
+              </li>
+              <li>
+                Implementing system-wide monitoring and security improvements.
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
 
-      <div class="work-entry">
-        <div class="work-head">
-          <h3>Film.io</h3>
-          <div class="tags">
-            <p>Remote</p>
-            <p>React</p>
-            <p>Next.js</p>
+      <div class="education">
+        <div class="edu-text">
+          <h3>Education</h3>
+          <div class="name-time">
+            <h4>Some Kind University</h4>
+            <p>2020 - 2024</p>
           </div>
-          <div class="time">
-            <p>2020 - Present</p>
-          </div>
-        </div>
-
-        <div class="work-description">
-          <p>Software Architect</p>
-          <ul>
-            <li>
-              Leading technical architecture of a blockchain-based film funding
-              platform.
-            </li>
-            <li>
-              Architecting migration from CRA to Next.js for improved
-              performance, SEO, and DX.
-            </li>
-            <li>
-              Established release process enabling faster deployments and
-              reliable rollbacks.
-            </li>
-            <li>
-              Implementing system-wide monitoring and security improvements.
-            </li>
-          </ul>
+          <p>Bachelor of Science in Computer Science and Engineering</p>
         </div>
       </div>
-    </div>
 
-    <div class="education">
-      <div class="edu-text">
-        <h3>Education</h3>
-        <div class="name-time">
-          <h4>Some Kind University</h4>
-          <p>2020 - 2024</p>
+      <div class="skill">
+        <h3>Skills</h3>
+        <div class="skill-tag">
+          <p>React</p>
+          <p>Node.js</p>
+          <p>MongoDB</p>
+          <p>Next.js</p>
+          <p>UI/UX Design</p>
+          <p>Tailwind</p>
         </div>
-        <p>Bachelor of Science in Computer Science and Engineering</p>
       </div>
-    </div>
 
-    <div class="skill">
-      <h3>Skills</h3>
-      <div class="skill-tag">
-        <p>React</p>
-        <p>Node.js</p>
-        <p>MongoDB</p>
-        <p>Next.js</p>
-        <p>UI/UX Design</p>
-        <p>Tailwind</p>
-      </div>
-    </div>
-
-    <div class="projects">
-      <h3 id="link">Projects</h3>
-      <div class="box">
-        <div class="box-card">
-          <a href="#"
-            ><h4>Project 1 <span></span></h4
-          ></a>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-            voluptates, quod, quae, quos quia quibusdam quidem voluptatum
-          </p>
-          <div class="stack">
-            <p>React</p>
-            <p>Node.js</p>
+      <div class="projects">
+        <h3 id="link">Projects</h3>
+        <div class="box">
+          <div class="box-card">
+            <a href="#"
+              ><h4>Project 1 <span></span></h4
+            ></a>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+              voluptates, quod, quae, quos quia quibusdam quidem voluptatum
+            </p>
+            <div class="stack">
+              <p>React</p>
+              <p>Node.js</p>
+            </div>
           </div>
-        </div>
 
-        <div class="box-card">
-          <a href="#"
-            ><h4>Project 2 <span></span></h4
-          ></a>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-            voluptates, quod, quae, quos quia quibusdam quidem voluptatum
-          </p>
-          <div class="stack">
-            <p>React</p>
-            <p>Node.js</p>
+          <div class="box-card">
+            <a href="#"
+              ><h4>Project 2 <span></span></h4
+            ></a>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+              voluptates, quod, quae, quos quia quibusdam quidem voluptatum
+            </p>
+            <div class="stack">
+              <p>React</p>
+              <p>Node.js</p>
+            </div>
           </div>
-        </div>
 
-        <div class="box-card">
-          <a href="#"
-            ><h4>Project 3 <span></span></h4
-          ></a>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-            voluptates, quod, quae, quos quia quibusdam quidem voluptatum
-          </p>
-          <div class="stack">
-            <p>React</p>
-            <p>Node.js</p>
+          <div class="box-card">
+            <a href="#"
+              ><h4>Project 3 <span></span></h4
+            ></a>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+              voluptates, quod, quae, quos quia quibusdam quidem voluptatum
+            </p>
+            <div class="stack">
+              <p>React</p>
+              <p>Node.js</p>
+            </div>
           </div>
         </div>
       </div>
